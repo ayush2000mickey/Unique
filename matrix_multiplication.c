@@ -19,7 +19,7 @@ int main()
 
     if (y == a)
     {
-        printf("/a");
+        printf("\a");
         func(x, y, a, b);
     }
 
