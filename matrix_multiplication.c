@@ -1,4 +1,4 @@
-//To multiply single characters of the matrix
+//Program to multiply single characters of the matrix
 #include <stdio.h>
 
 void func(int ax, int ay, int bx, int by)
