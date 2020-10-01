@@ -1,41 +1,11 @@
+//to multiplay single characters of the matrix
 #include <stdio.h>
-
-void func(int, int, int, int);
-
-int main()
-{
-
-    int x, y, a, b;
-
-    printf("Enter the order of first matrix");
-    scanf("%d", &x);
-
-    scanf("%d", &y);
-
-    printf("Enter the order of second matrix");
-    scanf("%d", &a);
-
-    scanf("%d", &b);
-
-    if (y == a)
-    {
-        printf("\a");
-        func(x, y, a, b);
-    }
-
-    else
-    {
-        printf("matrices cannot be multiplied due their orders");
-    }
-    printf("Hello");
-    return 0;
-}
 
 void func(int ax, int ay, int bx, int by)
 {
 
     int a[ax][ay], b[bx][by], c[ax][by], i, j;
-
+    
     printf("Enter the entries of first matrix....");
 
     for (i = 0; i < ax; i++)
@@ -92,3 +62,34 @@ void func(int ax, int ay, int bx, int by)
         }
     }
 }
+
+
+int main()
+{
+
+    int x, y, a, b;
+
+    printf("Enter the order of first matrix");
+    scanf("%d", &x);
+
+    scanf("%d", &y);
+
+    printf("Enter the order of second matrix");
+    scanf("%d", &a);
+
+    scanf("%d", &b);
+
+    if (y == a)
+    {
+        printf("\a");
+        func(x, y, a, b);
+    }
+
+    else
+    {
+        printf("matrices cannot be multiplied due their orders");
+    }
+    printf("Hope you liked the program!");
+    return 0;
+}
+
